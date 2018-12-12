@@ -12,6 +12,6 @@ $server = "us-cdbr-iron-east-01.cleardb.net";
  
  while($obj = mysqli_fetch_array($query_text))
  {
-	echo $obj ["name"]."".$obj ["name"];
+	echo $obj ["name"]."".$obj ["link"];
  }
  ?>
