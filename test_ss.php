@@ -10,7 +10,7 @@ $server = "us-cdbr-iron-east-01.cleardb.net";
  $sql_text = "SELECT * FROM contacttable";
  $query_text = mysqli_query ($conn,$sql_text);
  
- while($obj = mysqli_fetch_array(query_text))
+ while($obj = mysqli_fetch_array($query_text))
  {
 	echo $obj ["name"]."".$obj ["name"];
  }
