@@ -7,7 +7,7 @@ $server = "us-cdbr-iron-east-01.cleardb.net";
  $conn = new mysqli($server, $username, $password, $db);
  mysqli_query($conn, "SET NAMES utf8");
  
- $sql_text = "SELECT * FROM contacttable WHERE name = 'วิท' ";
+ $sql_text = "SELECT * FROM contacttable WHERE name LIKE '%วิ%' ";
  $query_text = mysqli_query ($conn,$sql_text);
  
  while($obj = mysqli_fetch_array($query_text))
