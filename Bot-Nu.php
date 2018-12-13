@@ -36,7 +36,7 @@
 				 //{
 					// $txtback ="คิดถึงเหมือนกัน";
 				 //}
-				 send_back($txtback,$replyToken);
+				 send_back($result,$replyToken);
 			 }
 		 }
 	 }

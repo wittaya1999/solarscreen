@@ -6,7 +6,7 @@ $server = "us-cdbr-iron-east-01.cleardb.net";
  $db = "heroku_ce52199dd4f50e1";
  $conn = new mysqli($server, $username, $password, $db);
  mysqli_query($conn, "SET NAMES utf8");
- function query($conn)
+ function query($txtin)
  {
 		$sql_text = "SELECT * FROM contacetable WHERE name LIKE '%".$txtin."'";
 		$query = mysqli_query($conn,$sql_text);
@@ -14,6 +14,6 @@ $server = "us-cdbr-iron-east-01.cleardb.net";
   {
    $result = $result."\n".$obj_result["contac_no"];
   }
-  return $return;
+  return $result;
  }
  ?>
