@@ -34,7 +34,7 @@
 				 {
 					 $txtback ="คิดถึงเหมือนกัน";
 				 }
-				 send_back($txtin,$replyToken);
+				 send_back($txtback,$replyToken);
 			 }
 		 }
 	 }
