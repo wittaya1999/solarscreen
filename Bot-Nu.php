@@ -30,7 +30,7 @@
 			 {
 				 $replyToken = $event['replyToken'];
                  $txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
-				 if($txtin =="คิดถึงนะ"
+				 if($txtin =="คิดถึงนะ")
 				 {
 					 $txtback ="คิดถึงเหมือนกัน"
 				 }
