@@ -1,4 +1,5 @@
 <?php
+	require('test_ss.php');
 	function send_back($txtin,$replyToken)
 	{
 		$access_token = 'd7CCCoAUOR6vaIw/BU7v0YcB4VupSJawiR5C8NT21t+1cxcPz/hwSOtca42GZMQLPonJmgeixJX67XqM9XWTbWtMxPyPcdfuQVP8E1JHKndd0Q2X26k92/uCEYubht3wBpLo9tlY2o0/MT87OV1UggdB04t89/1O/w1cDnyilFU=';
@@ -30,10 +31,11 @@
 			 {
 				 $replyToken = $event['replyToken'];
                  $txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
-				 if($txtin =="คิดถึงนะ")
-				 {
-					 $txtback ="คิดถึงเหมือนกัน";
-				 }
+				 $result = query($txtin);
+				 //if($txtin =="คิดถึงนะ")
+				 //{
+					// $txtback ="คิดถึงเหมือนกัน";
+				 //}
 				 send_back($txtback,$replyToken);
 			 }
 		 }
