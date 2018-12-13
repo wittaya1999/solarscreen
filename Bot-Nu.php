@@ -30,7 +30,7 @@
 			 {
 				 $replyToken = $event['replyToken'];
                  $txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
-				 sent_back($txtin,$replyToken);
+				 send_back($txtin,$replyToken);
 			 }
 		 }
 ?>	 
