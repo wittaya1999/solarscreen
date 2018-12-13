@@ -31,7 +31,7 @@
 			 {
 				 $replyToken = $event['replyToken'];
                  $txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
-				 $result = query($txtin);
+				 $result = search($txtin);
 				 //if($txtin =="คิดถึงนะ")
 				 //{
 					// $txtback ="คิดถึงเหมือนกัน";

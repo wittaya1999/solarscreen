@@ -6,9 +6,9 @@ $server = "us-cdbr-iron-east-01.cleardb.net";
  $db = "heroku_ce52199dd4f50e1";
  $conn = new mysqli($server, $username, $password, $db);
  mysqli_query($conn, "SET NAMES utf8");
- function query($txtin)
+ function search($txtin)
  {
-		$sql_text = "SELECT * FROM contacetable WHERE name LIKE '%".$txtin."'";
+		$sql_text = "SELECT * FROM contacetable WHERE name LIKE '%".$txtin."%'";
 		$query = mysqli_query($conn,$sql_text);
   while ($obj_result = mysqli_fetch_array($query))
   {
